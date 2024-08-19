@@ -112,6 +112,7 @@ function timerStart() {
       max = 10;
       timerStart(); // Restart the timer for the next question
       validating();
+      changeProgressBar()
     }
   }, 1000); // Timer updates every second
 }
@@ -217,4 +218,7 @@ function endQuiz() {
   const lengthEl = document.querySelector(".length")
   lengthEl.style.display = 'none'
   document.querySelector("h3").style.textAlign = "center"
+  document.querySelector("h3").style.fontSize = "1.2rem"
+  progressBarEl.parentElement.style.display = "none"
+
 }
