@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="question-card">
+        <div class="header">
+            <h3>Awesome Quiz Application</h3>
+            <div id="timer">
+                <p>Time Left</p>
+                <div id="time">
+                    <span>10</span>
+                </div>
+            </div>            
+        </div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="content-cotainer">
+        </div>
+        <div class="footer">
+            <div class="length">
+                <p><span id="index">1</span> of <span id="total">5</span> Questions</p>
+            </div>
+            <button id="next-question">Next Que</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
