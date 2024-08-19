@@ -154,10 +154,13 @@ p{
 }
 @media(max-width: 550px){
     #question-card{
-        /* height: 80%;  */
+        height: 80%; 
         width: 80%;
     }
     #timer{
         width: 40%;
+    }
+    #content-cotainer{
+        height: 65%;
     }
 }
