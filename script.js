@@ -203,16 +203,21 @@ nextButton.addEventListener("click", (e) => {
   
   //validating user input
   validating();
-  
-  
-  
+
 });
 
-// Function to end the quiz
+
+// Function to end and restart the quiz
+const headingEl = document.getElementById('title')
+
 function endQuiz() {
   clearInterval(interval); // Stop the timer
   contentCotainerEl.innerHTML = `<h2 class="end-quiz-heading">Quiz Complete!</h2><p class="final-score">Your final score is: ${score}</p>`;
-  nextButton.style.display = 'none'; // Hide the "Next Question" button
+  nextButton.innerHTML = 'Restart Quiz'; // Hide the "Next Question" button
+  nextButton.style.display = 'block'
+  nextButton.style.margin = 'auto'
+  headingEl.style.display = 'block'
+  headingEl.style.margin = 'auto'
   const timediv = document.getElementById("timer")
   timediv.style.display = 'none'
   const lengthEl = document.querySelector(".length")
@@ -220,5 +225,8 @@ function endQuiz() {
   document.querySelector("h3").style.textAlign = "center"
   document.querySelector("h3").style.fontSize = "1.2rem"
   progressBarEl.parentElement.style.display = "none"
+  nextButton.addEventListener('click', ()=>{
+    window.location.reload()
+  })
 
 }
