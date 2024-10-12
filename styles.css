@@ -152,7 +152,7 @@ p{
         margin: 15px 0;
     }
 }
-@media(max-width: 550px){
+@media(max-width: 768px){
     #question-card{
         height: 80%; 
         width: 80%;
